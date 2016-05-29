@@ -1,3 +1,11 @@
-/**
- * Created by ale82 on 29.05.2016.
- */
+$(function(){
+    $('.header-nav-link').click(function(){
+        var id = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: ($(id).offset().top - 76)
+        }, 500);
+        return false;
+    });
+});
+
